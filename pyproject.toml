@@ -1,0 +1,26 @@
+[project]
+name = "test-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "momoti-0715", email = "ayapon2003@outlook.jp" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "folium>=0.20.0",
+    "ipykernel>=7.4.0",
+    "jupyterlab>=4.6.4",
+    "mapclassify>=2.11.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "plateaukit>=0.20.0",
+    "plotly>=7.1.0",
+]
+
+[project.scripts]
+test-project = "test_project:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
